@@ -54,14 +54,14 @@ class Inventory extends React.Component {
 
     render() {
         const logout = <button onClick={this.logout}>Log Out!</button>
-        if (!this.state.uid) {
-            return <Login authenticate={this.authenticate} />
-        };
-        if (this.state.uid !== this.state.owner) {
-            return <div>
-                <p>Sorry you are not the owner!</p>
-            </div>
-        }
+        // if (!this.state.uid) {
+        //     return <Login authenticate={this.authenticate} />
+        // };
+        // if (this.state.uid !== this.state.owner) {
+        //     return <div>
+        //         <p>Sorry you are not the owner!</p>
+        //     </div>
+        // }
         return (
             <div className="inventory">
                 <h2>Inventory</h2>
